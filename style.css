@@ -1,0 +1,141 @@
+body {
+    /* Empurra o conteúdo para baixo para sair de trás do menu fixo */
+    padding-top: 160px; 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    background-image: url('https://c4.wallpaperflare.com/wallpaper/201/444/964/hybrid-linkin-park-wallpaper-preview.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa ao rolar a página */
+}
+
+.menu {
+    background-color: #000000;
+    text-align: center;
+    padding: 40px 0;
+    position: fixed; /* Fixa o menu no topo da tela */
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+    color: #ff03c8;
+    text-decoration: none;
+    margin: 0px; 
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 20px; 
+    font-size: 18px;
+    transition: 0.2s;
+    display: inline-block;
+}
+
+.menu a:hover {
+    color: #cccccc; /* Muda a cor do texto ao passar o mouse */
+    transform: scale(1.15); /* Aumenta levemente o tamanho do link ao passar o mouse */
+}
+
+.conteudo {
+    color: #ffffff; /* Força a cor do texto para branco */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Adiciona preenchimento */
+    background-color: rgba(18, 18, 18, 0.85); /* Fundo escuro semi-transparente */
+    backdrop-filter: blur(6px); /* Desfoque sutil da imagem de fundo */
+    border-radius: 4px;
+    width: 50%;
+    height: auto;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+}
+
+.conteudo h1 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.conteudo p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* Estilo do Formulário */
+#formulario {
+    background-color: rgba(10, 10, 12, 0.85); /* Estilo dark translúcido */
+    backdrop-filter: blur(8px);
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    margin: 30px auto;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Campos de entrada e texto com pegada industrial */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    background-color: rgba(0, 0, 0, 0.65);
+    border: 1px solid #444444;
+    border-radius: 2px;
+    color: #f1f1f1;
+    font-size: 15px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #cccccc;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.25);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #777777;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Botão com a imagem */
+button {
+    background-image: url('img/button.png');
+    width: 100px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  
+    margin-top: 10px;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+    transform: scale(1.04);
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+}
