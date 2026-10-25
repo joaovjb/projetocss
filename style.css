@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;/* Habilita a rolagem suave para âncoras */
+}
+
 body {
     /* Empurra o conteúdo para baixo para sair de trás do menu fixo */
     padding-top: 160px; 
@@ -14,9 +18,10 @@ body {
 .menu {
     background-color: #000000;
     text-align: center;
-    padding: 40px 0;
+    padding: 40px 0px;
     position: fixed; /* Fixa o menu no topo da tela */
     width: 100%;
+    height: 100px;
     left: 0;
     top: 0;
     z-index: 9999;
@@ -43,7 +48,7 @@ body {
 
 .conteudo {
     color: #ffffff; /* Força a cor do texto para branco */
-    margin: 20px auto; /* Centraliza horizontalmente */
+    margin: 30px auto; /* Centraliza horizontalmente */
     padding: 20px; /* Adiciona preenchimento */
     background-color: rgba(18, 18, 18, 0.85); /* Fundo escuro semi-transparente */
     backdrop-filter: blur(6px); /* Desfoque sutil da imagem de fundo */
@@ -52,6 +57,7 @@ body {
     height: auto;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+    
 }
 
 .conteudo h1 {
@@ -69,7 +75,7 @@ body {
     margin: 20px 0;
 }
 
-/* Estilo do Formulário */
+
 #formulario {
     background-color: rgba(10, 10, 12, 0.85); /* Estilo dark translúcido */
     backdrop-filter: blur(8px);
@@ -85,7 +91,7 @@ body {
     box-sizing: border-box;
 }
 
-/* Campos de entrada e texto com pegada industrial */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -115,13 +121,14 @@ textarea::placeholder {
 }
 
 textarea {
-    resize: vertical;
+    resize: vertical;/* Permite redimensionar verticalmente */
     min-height: 100px;
+    
 }
 
 /* Botão com a imagem */
 button {
-    background-image: url('img/button.png');
+    background-image: url('img/enviar.png');
     width: 100px;
     height: 40px;
     background-size: 100% 100%;
@@ -132,10 +139,56 @@ button {
     cursor: pointer;
   
     margin-top: 10px;
-    transition: transform 0.15s ease, filter 0.15s ease;
+    transition: transform 0.15s ease, filter 0.15s ease;/* Adiciona uma transição suave para o efeito de hover */
 }
 
 button:hover {
     transform: scale(1.04);
-    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.4));
+    filter: drop-shadow(0 0 6px rgba(255, 255, 255, 1));/* Adiciona um efeito de brilho ao passar o mouse */
 }
+
+table{
+    background-color: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    color: #ffffff;
+    border-collapse: collapse;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 50%;
+    margin: 30px auto;
+    font-family: 'lp-fonte', sans-serif;
+}
+
+td, th {
+    padding: 16px 16px;
+}
+
+th {
+    
+    background-color: rgba(18, 18, 18, 0.85);
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@font-face {
+  font-family: 'lp-fonte';
+  src: url('fontes/LpFonte.ttf') format('truetype');
+}
+
+.ancora{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    margin-top: 6px;
+    background-color: rgba(0, 0, 0, 0.94);
+    border: 1px solid #444444;
+    border-radius: 10px;
+    color: #f1f1f1;
+    text-decoration: none;
+}
+
+#sobre {
+  scroll-margin-top: 190px;/* Ajusta a margem superior para compensar o menu fixo */ 
+}
+
